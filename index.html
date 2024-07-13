@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <p>Happy Birthday Pihu</p>
+          <div class="cake">
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="candle"></div>
+
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        
+        <p><b>Happy Birthday Love</b>, Many many Happy returns of the day...onaik bhalobasa kissies and hug.<b>LOVE YOU THE MOSTEST MY PRINCESS</b> </p>
+        <a href="gift.html" target="_blank">
+          <button><b>Love you</b></button>
+        </a>
+        
+        <h1>&#127873;</h1>
+      </div>
+    </div>
+    <!--<audio  controls id="autoplay" src="Happy Birthday.mp3"> </audio>
+    <script>
+      window.onload=function(){
+        document.getElementById("autoplay").play();
+      }
+    </script>-->
+
+
+    <iframe src="Happy Birthday.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+
+    <audio autoplay loop  id="playAudio">
+      <source src="Happy Birthday.mp3">
+  </audio>
+   <script>
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+   </script>
+
+
+
+  <!-- <iframe src="Happy Birthday.mp3" allow="autoplay" style="display: none"></iframe>-->
+
+   <!--<audio id="player" autoplay loop>
+    <source src="Happy Birthday.mp3" type="audio/mp3">
+</audio>-->
+
+<!--<audio autoplay muted>
+  <source src="Happy Birthday.mp3">
+</audio>-->
+
+  </body>
+</html>
