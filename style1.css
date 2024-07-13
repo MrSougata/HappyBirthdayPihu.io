@@ -13,12 +13,12 @@
     height: 100vh;
   }
   h1{
-     color: rgb(242, 255, 0);
-     text-shadow: 5px 5px 10px rgb(255, 68, 0);
+     color: white;
+     text-shadow: 5px 5px 10px black;
   }
   h2{
-    color: rgb(242, 255, 0);
-    text-shadow: 5px 5px 10px rgb(255, 119, 0);
+    color: white;
+    text-shadow: 5px 5px 10px black;
  }
   .vid{
    /* display: flex;
